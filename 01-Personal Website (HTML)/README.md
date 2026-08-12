@@ -62,7 +62,6 @@ This exercise will guide us to learn most of the html basic elements. This guide
 - Add a new section of **heroes/writers/musicians**, etc
 - Create a table that displays them horizontally (at least 3)
 - The table should contain:
-
   - Picture
   - Name
   - Date of birth/Date of dead(if dead)
@@ -76,7 +75,6 @@ This exercise will guide us to learn most of the html basic elements. This guide
 ### Forms
 
 - Add a weekly schedule form where they can register:
-
   - Date [date field]
   - Time start [time]
   - Time end [time]
