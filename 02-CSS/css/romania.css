@@ -1,3 +1,21 @@
 body {
     margin: 0;
 }
+div{
+    height: 700px;
+    width: 33%;
+    margin: 0;
+    display: inline-block;
+}
+.red{
+    background-color: red;
+}
+
+.blue{
+    background-color: blue;
+    
+}
+
+.yellow{
+    background-color: yellow;
+}

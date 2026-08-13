@@ -3,19 +3,21 @@ body {
 }
 
 div{
-    background-color: #3a3d3d;
     height: 200px;
     width: 200px;
     position: relative;
 }
 
 .div1{
+    background-color: red;
     border-style: solid ;
     border-width: 10px;
     padding: 20px;
+    top: 500px;
 }
 
 .div2{
+    background-color: blue;
     border-style: solid;
     border-width: 20px;
     left: 260px;
@@ -23,8 +25,10 @@ div{
 }
 
 .div3{
+    background-color: yellow;
     border-style: solid;
     border-width: 10px;
     left: 500px;
+    top: -460px;
 }
 
