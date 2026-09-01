@@ -91,7 +91,7 @@ calculateBtn.addEventListener('click', () => {
         // TODO: Execute the higher-order 'calculator' function with input values and the matched function reference.
         const res = calculator(valA, valB, targetCallback);
         // TODO: Update resultStatus text, toggling classes (e.g., alert-success vs alert-danger) based on outcomes!
-        resultStatus.className = "alert alert-success text-center";
+        resultStatus.className = "alert alert-success text-center";// change class so bootstrap can style the element based on the result
         resultStatus.textContent = `Result: ${res}`;
     }catch (error) {
         resultStatus.className = "alert alert-danger text-center";

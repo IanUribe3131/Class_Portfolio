@@ -1,3 +1,135 @@
+/* Basic styles for the Personal Website - CSS exercise */
+
 body {
   margin: 0;
+  background-color: #eaf6f6;
+  color: #40514e;
+  font-family: 'Merriweather', serif;
+  text-align: center;
+}
+
+h1 {
+  color: #66bfbf;
+  font-family: 'Sacramento', cursive;
+  font-size: 5.5rem;
+  margin: 50px;
+}
+
+h2 {
+  color: #66bfbf;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+}
+
+h3 {
+  color: #11999e;
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  color: #11999e;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(238, 252, 48);
+}
+
+hr {
+  border: 6px dotted #eaf6f6;
+  border-bottom: 0;
+  margin: 100px auto;
+  width: 4%;
+}
+
+/* A different background for alternating content areas. */
+.content-section:nth-of-type(even),
+.destination-section:nth-of-type(even) {
+  background-color: #d9eeee;
+}
+
+.content-section,
+.destination-section,
+.page-header {
+  padding: 25px;
+}
+
+/* Keep logos small and circular. */
+li img,
+h3 img {
+  border-radius: 50%;
+  height: 100px;
+  max-width: 100px;
+  object-fit: cover;
+  width: 100px;
+}
+
+/* Simple meet-the-team layout for the musicians table. */
+.team {
+  margin: auto;
+}
+
+.team td,
+.team th {
+  padding: 10px;
+}
+
+.team img {
+  border-radius: 50%;
+  height: 100px;
+  object-fit: cover;
+  width: 100px;
+}
+
+/* Form styles */
+form {
+  background-color: #d9eeee;
+  border: 3px dotted #66bfbf;
+  margin: auto;
+  padding: 20px;
+  width: 60%;
+}
+
+input,
+select,
+button {
+  background-color: white;
+  border: 1px solid #66bfbf;
+  border-radius: 8px;
+  padding: 5px;
+}
+
+/* The hero uses a simple mountain and two cloud shapes. */
+.hero {
+  background-color: #d9eeee;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.cloud {
+  background-color: white;
+  border-radius: 50%;
+  height: 45px;
+  position: sticky;
+  top: 15px;
+  width: 110px;
+}
+
+.cloud-left {
+  margin-left: 15%;
+}
+
+.cloud-right {
+  margin-left: 70%;
+}
+
+.mountain {
+  border-bottom: 160px solid #66bfbf;
+  border-left: 160px solid transparent;
+  border-right: 160px solid transparent;
+  height: 0;
+  margin: 20px auto 0;
+  width: 0;
 }
