@@ -6,7 +6,7 @@ These exercises will just show multiple ways in which JS can interact with our w
 
 ---
 
-## Clock - 2 pts
+## Clock - 2 pts DONE
 
 Complete the clock exercise by completing the tasks requested in the code by the _TODO_ labels.
 
@@ -52,7 +52,7 @@ Transform the input received into its pig latin version. Fix or complete the cod
 
 ---
 
-## Sieve of Eratosthenes - 3 pts
+## Sieve of Eratosthenes - 3 pts DONE
 
 Get the value provided and then get all the prime numbers below that one.
 
@@ -60,7 +60,7 @@ Look for the algorithm and implement it.
 
 ---
 
-## Society parody - 3 pts
+## Society parody - 3 pts DONE
 
 This is a game that will show you how happiness/sadness affects the surronding people. In this game you start with a society with initial happy/sad parameters given by the individuals that are there. They will interact with each other and their happy factors will change, depending on which character contacts who. When the happyness values go below 0, then the subject will turn sad, but if the happyness values goes above 1, they will become happy people.
 

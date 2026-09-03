@@ -8,6 +8,14 @@ body {
   text-align: center;
 }
 
+.page-container {
+  box-sizing: border-box;
+  margin: 30px auto;
+  border-color: black;
+  max-width: 1100px;
+  width: calc(100% - 40px);
+}
+
 h1 {
   color: #66bfbf;
   font-family: 'Sacramento', cursive;
@@ -66,7 +74,7 @@ h3 img {
   width: 100px;
 }
 
-/* Simple meet-the-team layout for the musicians table. */
+
 .team {
   margin: auto;
 }
@@ -108,28 +116,5 @@ button {
   padding: 20px;
 }
 
-.cloud {
-  background-color: white;
-  border-radius: 50%;
-  height: 45px;
-  position: sticky;
-  top: 15px;
-  width: 110px;
-}
 
-.cloud-left {
-  margin-left: 15%;
-}
 
-.cloud-right {
-  margin-left: 70%;
-}
-
-.mountain {
-  border-bottom: 160px solid #66bfbf;
-  border-left: 160px solid transparent;
-  border-right: 160px solid transparent;
-  height: 0;
-  margin: 20px auto 0;
-  width: 0;
-}

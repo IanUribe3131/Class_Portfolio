@@ -93,8 +93,13 @@ actionList.addEventListener('click', (e) => {
     } 
     else if (action === 'delete') {
         // Fade out/remove currentCard from DOM, update totals
-        currentCard.remove();
-        updateCounter();
+        currentCard.style.transition = "all 0.3s ease";
+        currentCard.style.opacity = "0";
+        setTimeout(()=>{
+            currentCard.remove();
+            updateCounter();
+        }, 300)
+
     } 
     else if (action === 'up') {
         // Find sibling element directly above currentCard
