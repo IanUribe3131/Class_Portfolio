@@ -2,11 +2,305 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Personal Website - CSS</title>
+  <title>My Personal Website</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="./js/server.js" defer></script>
 </head>
+
 <body>
-  
+<div class="page-container">
+  <header class="hero">
+    <table>
+      <tr>
+        <td>
+          <img src="./images/Me.jpeg" alt="Ian Uribe Maldonado" width="150">
+        </td>
+        <td>
+          <h1 id="my-name">Ian Uribe Maldonado</h1>
+          <h3>CS Student at Universidad Panamericana GDL</h3>
+          <p>Economos Ave. 5980, Guadalajara, Mexico</p>
+          <p>
+            Hi! My name is Ian Uribe. In my spare time I enjoy playing
+            videogames with friends, playing the guitar, and cooking/baking.
+          </p>
+          <blockquote>
+            "With great power comes great responsibility." - Uncle Ben
+          </blockquote>
+        </td>
+      </tr>
+    </table>
+  </header>
+
+  <hr>
+
+  <main>
+    <div class="content-section background-section">
+      <h1>Background</h1>
+      <p>
+        I like anything about technology and my main goal in life is to live
+        happily and work in a development team on an interesting product.
+      </p>
+
+      <h3>Education</h3>
+      <ul>
+        <li>
+          <a href="https://www.up.edu.mx" target="_blank" rel="noopener">
+            <img src="./images/UP_Logo.jpg" alt="Universidad Panamericana logo" width="60">
+          </a>
+          <em>2025-present</em> -
+          <strong>Universidad Panamericana</strong>
+        </li>
+        <li>
+          <a href="https://prepa.iteso.mx" target="_blank" rel="noopener">
+            <img src="./images/ITESO_logo.jpg" alt="Prepa ITESO logo" width="60">
+          </a>
+          <em>2022-2025</em> -
+          <strong>Prepa ITESO High School</strong>
+        </li>
+        <li>
+          <a href="https://www.pierrefaure.edu.mx/home/" target="_blank" rel="noopener">
+            <img src="./images/PierreFaure_logo.jpg" alt="Instituto Pierre Faure logo" width="60">
+          </a>
+          <em>2019-2022</em> -
+          <strong>Instituto Pierre Faure Middle School</strong>
+        </li>
+      </ul>
+
+      <h3>Skills</h3>
+      <ol>
+        <li>Cooking - 95%</li>
+        <li>English - 90%</li>
+        <li>Java - 70%</li>
+        <li>Electronics - 50%</li>
+        <li>Python - 25%</li>
+      </ol>
+    </div>
+
+    <hr>
+
+    <div class="content-section hobbies-section">
+      <h1>Hobbies</h1>
+
+      <h3>Favorite Food</h3>
+
+      <p>Top 5 cuisines</p>
+      <ol>
+        <li>Japanese</li>
+        <li>Thai</li>
+        <li>Mexican</li>
+        <li>Italian</li>
+        <li>Korean</li>
+      </ol>
+
+      <p>Bottom 3 cuisines</p>
+      <ul>
+        <li>Russian</li>
+        <li>German</li>
+        <li>Indian</li>
+      </ul>
+
+      <h3>
+        <img src="./images/book.png" alt="Book icon" width="60">
+        Books
+      </h3>
+      <ul>
+        <li>86 Eighty-Six light novel</li>
+        <li>Ghost in the Wires</li>
+        <li>The Ramparts of Ice (manga)</li>
+      </ul>
+
+      <h3>
+        <img src="./images/movie.png" alt="Movie icon" width="60">
+        Movies &amp; TV Shows
+      </h3>
+      <ul>
+        <li>86 Eighty-Six Anime</li>
+        <li>Frieren: Beyond Journey's End</li>
+        <li>Interstellar</li>
+      </ul>
+
+      <h2>Favorite Destinations</h2>
+      <p><a href="destination.html">My Favorite Spots</a></p>
+      <ul>
+        <li><a href="destination.html#kyoto">Kyoto</a></li>
+        <li><a href="destination.html#london">London</a></li>
+        <li><a href="destination.html#beijing">Beijing</a></li>
+        <li><a href="destination.html#seattle">Seattle</a></li>
+        <li><a href="destination.html#rome">Rome</a></li>
+      </ul>
+    </div>
+
+    <hr>
+
+    <div class="content-section team-section">
+      <h2>Musicians</h2>
+      <table class="team">
+        <thead>
+          <tr>
+            <th scope="col">Picture</th>
+            <th scope="col">Name</th>
+            <th scope="col">Born/Died</th>
+            <th scope="col">Profession</th>
+            <th scope="col">Famous Work</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <img src="./images/eve.webp" alt="Eve" width="250">
+            </td>
+            <td>Eve</td>
+            <td>May 23, 1995</td>
+            <td>Singer, songwriter, vocalist, music producer</td>
+            <td>
+              <ul>
+                <li>Kaikai Kitan, the opening from Jujutsu Kaisen</li>
+                <li>Dramaturgy</li>
+                <li>Last Dance</li>
+                <li>Inochi no Tabekata</li>
+              </ul>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <img src="./images/ado.jpg" alt="Ado" width="250">
+            </td>
+            <td>Ado</td>
+            <td>October 24, 2002</td>
+            <td>Singer</td>
+            <td>
+              <ul>
+                <li>New Genesis, from One Piece Film: Red</li>
+                <li>Dramaturgy</li>
+                <li>Last Dance</li>
+                <li>Inochi no Tabekata</li>
+              </ul>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <img src="./images/natori.jpg" alt="Natori" width="250">
+            </td>
+            <td>Natori</td>
+            <td>January 31, 2003</td>
+            <td>Singer-songwriter, record producer</td>
+            <td>
+              <ul>
+                <li>Best known for his viral hit "Overdose"</li>
+                <li>
+                  Other popular anime openings/intros:
+                  <ul>
+                    <li>Absolute Zero</li>
+                    <li>Serenade</li>
+                  </ul>
+                </li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <hr>
+
+    <div class="content-section schedule-section">
+      <h2>Weekly Schedule</h2>
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Date</th>
+            <th scope="col">Start</th>
+            <th scope="col">End</th>
+            <th scope="col">Description</th>
+            <th scope="col">Place</th>
+            <th scope="col">Type</th>
+            <th scope="col">Notes</th>
+            <th scope="col">Icon</th>
+          </tr>
+        </thead>
+        <tbody class="tableBody">
+          
+        </tbody>
+      </table>
+    </div>
+
+    <hr>
+
+    <div class="content-section form-section">
+      <h2>Weekly Schedule Form</h2>
+
+      <form action="#" method="get" id="schedule-form">
+        <fieldset>
+          <legend>Register a Schedule Activity</legend>
+
+          <p>
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+          </p>
+
+          <p>
+            <label for="start">Time start:</label>
+            <input type="time" id="start" name="start" required>
+          </p>
+
+          <p>
+            <label for="end">Time end:</label>
+            <input type="time" id="end" name="end" required>
+          </p>
+
+          <p>
+            <label for="activity">Activity:</label>
+            <input type="text" id="activity" name="activity" required>
+          </p>
+
+          <p>
+            <label for="place">Place:</label>
+            <input type="text" id="place" name="place" required>
+          </p>
+
+          <p>
+            <label for="type">Type:</label>
+            <select id="type" name="type" required>
+              <option value="" selected disabled>Select a type</option>
+              <option value="school">School</option>
+              <option value="personal">Personal</option>
+              <option value="professional">Professional</option>
+              <option value="familiar">Familiar</option>
+              <option value="other">Other</option>
+            </select>
+          </p>
+
+          <p>
+            <label for="notes">Notes:</label>
+            <input type="text" id="notes">
+          </p>
+
+          <p>
+            <label for="flag">Flag:</label>
+            <input type="color" id="flag" name="flag" value="ff0000">
+          </p>
+
+          <fieldset>
+            <legend>Free or Busy</legend>
+            <label>
+              <input type="checkbox" id="free-busy" name="free_busy">
+              Free
+            </label>
+          </fieldset>
+
+          <p>
+            <button type="submit">Add Activity</button>
+            <button type="reset">Clear Form</button>
+          </p>
+        </fieldset>
+      </form>
+    </div>
+  </main>
+
+  <hr>
+</div>
 </body>
 </html>
