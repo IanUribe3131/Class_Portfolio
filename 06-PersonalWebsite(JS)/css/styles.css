@@ -120,5 +120,16 @@ button {
   align-items: center;
 }
 
+table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  word-wrap: break-word; 
+  overflow-wrap: break-word;
+}
 
 
