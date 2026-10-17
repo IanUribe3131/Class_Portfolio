@@ -1,10 +1,23 @@
 import express from 'express';
 import { getWeatherFrom } from './services/meteoService.js';
+import { loadEnvFile } from "node:process";
+import { connectDB } from "./config/connectDB.js";
+import { createUser, findUser, findUsers } from "./services/user-service.js" 
 
 //const express = require('express');
 
 const app = express();
 app.use(express.json());//middleware
+
+loadEnvFile();
+const dbuser = process.env.DB_USER;
+const dbpass = process.env.DB_PASSWORD;
+const dbname = 'test';
+
+const mongoUrl = `mongodb+srv://${dbuser}:${dbpass}@cluster0.jt2fuzs.mongodb.net/${dbname}`;
+connectDB(mongoUrl);
+
+
 
 const scientists = [
     { id: 1, name: "Dr. Elena Rostova", department: "Climate", projects: 4 },
@@ -12,7 +25,9 @@ const scientists = [
     { id: 3, name: "Dr. Aisha Khan", department: "Climate", projects: 7 }
 ];
 
+
 const initiatives = [];
+//mongodb+srv://<db_username>:<db_password>@cluster0.jt2fuzs.mongodb.net/
 
 class WeatherError extends Error {
   constructor(message, statusCode, rootCauseClass) {
@@ -20,6 +35,47 @@ class WeatherError extends Error {
     this.name = name;
   }
 }
+
+app.post('/user', (req, res) => {
+  res.sendFile(process.cwd() + '/public/user.html');
+});
+
+app.post('/user', async (req, res) => {
+    try {
+        const { username, name, email, password } = req.body;
+
+        // Check that all fields are provided
+        if (!username || !name || !email || !password) {
+            return res.status(400).send('All fields are required.');
+        }
+
+        // Hash the password before storing it
+        const hashedPassword = await bcrypt.hash(password, 12);
+
+        // Create the user in MongoDB
+        createUser(username, name, email, hashedPassword);
+
+        res.status(201).json({
+            message: 'User created successfully!',
+            user: {
+                id: newUser._id,
+                username: newUser.username,
+                name: newUser.name,
+                email: newUser.email
+            }
+        });
+
+    } catch (error) {
+        if (error.code === 11000) {
+            return res.status(409).send(
+                'Username or email already exists.'
+            );
+        }
+
+        console.error(error);
+        res.status(500).send('An error occurred while creating the user.');
+    }
+});
 
 app.get('/', (req, res) => {
   res.send('Hello World');

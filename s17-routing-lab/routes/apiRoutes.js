@@ -1,5 +1,5 @@
 import express from 'express';
-import { protect, requireAdmin } from '../middlewares/authMiddleware.js';
+import { protect, requireAdmin } from '../middleware/authMiddleware.js';
 import { AppError } from '../utils/appError.js';
 
 const router = express.Router();
